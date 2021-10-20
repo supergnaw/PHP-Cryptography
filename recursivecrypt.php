@@ -7,8 +7,7 @@
 		if( 'encrypt' == $action ) {
 			// shift to the right for encryption
 			$rotKey = $keySeed;
-			$rot = 1;
-			$keySeed = substr( $keySeed, $rot ) . substr( $keySeed, 0, $rot );
+			$keySeed = substr( $keySeed, 1 ) . substr( $keySeed, 0, 1 );
 		}
 		elseif( 'decrypt' == $action ) {
 			// shift to the left for decryption
