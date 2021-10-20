@@ -1,5 +1,5 @@
 <?php
-  function recursivecrypt( $action, $string, $keySeed, $recursion = 0 ) {
+	function recursivecrypt( $action, $string, $keySeed, $recursion = 0 ) {
 		$output = False;
 		$encrypt_method = 'AES-256-CTR';
 
